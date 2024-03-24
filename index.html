@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Я - студент ВШЭ</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="glitch">Добро пожаловать! Я - студент ВШЭ</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="contact.html">Обратная связь</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="info-section">
+            <h2>О ВШЭ</h2>
+            <p>Высшая школа экономики (ВШЭ) — один из ведущих российских университетов, специализирующихся в области социальных и экономических наук.</p>
+            <img src="hse_logo.jpg" alt="Логотип ВШЭ">
+        </section>
+
+        <section class="map-section">
+            <h2>Карта кампуса ВШЭ</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.477348081471!2d37.623129815462976!3d55.75582198055318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f73f63a7b%3A0x2b6126ad4900f08!2z0JzQvtGB0LrQstCw0Y8g0L_QtdGA0YLQvtC70LXQtSDQnNC-0YHQutCy0LAsINCc0L7RgdC60LLQuNGP!5e0!3m2!1sru!2sru!4v1614953910345!5m2!1sru!2sru"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0">
+            </iframe>
+        </section>
+
+
+
+<!-- Добавляем секцию для виртуального помощника -->
+    <section class="assistant-section">
+        <h2>Виртуальный помощник</h2>
+
+        <!-- Форма для текстовых сообщений -->
+        <form id="textForm">
+            <input type="text" id="textInput" placeholder="Введите ваше сообщение здесь...">
+            <input type="submit" value="Отправить текстовое сообщение">
+        </form>
+
+        <button id="recordButton">Записать аудиосообщение</button>
+        <audio id="audioPlayback" controls hidden></audio>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 Я - студент ВШЭ. Все права защищены.</p>
+    </footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

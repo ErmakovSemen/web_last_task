@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Обратная связь - Я - студент ВШЭ</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="glitch">Обратная связь</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Обратная связь</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="contact-section">
+            <h2>Свяжитесь со мной</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Добавленное поле с множественным выбором -->
+                <label for="interests">Интересы:</label>
+                <select id="interests" name="interests" multiple>
+                    <option value="economics">Экономика</option>
+                    <option value="mathematics">Математика</option>
+                    <option value="informatics">Информатика</option>
+                    <option value="linguistics">Лингвистика</option>
+                    <option value="psychology">Психология</option>
+                </select>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 Я - студент ВШЭ. Все права защищены.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
